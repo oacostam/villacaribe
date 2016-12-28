@@ -61,12 +61,13 @@ router.get('/', function (req, res) {
 
 router.post('/', function(req, res) {
     // create reusable transporter object using the default SMTP transport
-    var transporter = nodemailer.createTransport('smtps:/username%40gmail.com:password@smtp.gmail.com');
+    var emailAccount = process.env.EMAIL_ACCOUNT;
+    var transporter = nodemailer.createTransport('smtps://' + emailAccount + '@smtp.gmail.com');
     
     // setup e-mail data with unicode symbols
     var mailOptions = {
         from: '"' + req.body.name + '" <' + req.body.email + '>',// sender address
-        to: 'info@villacaribe.org', // list of receivers
+        to: 'info@villacaribe.org,oscar.acostamontesde@gmail.com', // list of receivers
         subject: 'Mensaje desde la web de VillaCaribe', // Subject line
         text: req.body.message // plaintext body
     };
