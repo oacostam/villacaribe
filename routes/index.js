@@ -62,7 +62,6 @@ router.get('/', function (req, res) {
 router.post('/', function(req, res) {
     // create reusable transporter object using the default SMTP transport
     var emailAccount = process.env.EMAIL_ACCOUNT;
-    var recaptchaKey = process.env.RECAPTCHA_KEY;
     var transporter = nodemailer.createTransport('smtps://' + emailAccount + '@smtp.gmail.com');
     
     // setup e-mail data with unicode symbols
