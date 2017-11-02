@@ -176,26 +176,20 @@ html
         section#howtoarrive.bg-light-gray
             .container
                 .row
-                    .col-lg-12.text-center
-                        h2.section-heading=vcHowToArr
-                        h3.section-subheading.text-muted 
-                            p.large=vcAddress
-                            p=vcTel
-                            p=vcEmail
+                  .col-lg-12.text-center
+                    h2.section-heading=vcHowToArr
+                    h3.section-subheading.text-muted
+                      p.large=vcAddress
+                      p=vcTel
+                      p=vcEmail            
                 .row
-                 .col-lg-12
-                  ul
-                   li
-                    iframe#maplocation.col-sm-6.col-xs-12(src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP1tt2wTu1BIRfbX4gehPYWs&key=AIzaSyD8Cfp36f9ME5SRQSSOOSa8srit6i6y1mc', width='360', height='360', frameborder='0', style='border:0', allowfullscreen='')
-                                .timeline-panel
-                                .timeline-heading
-                                    h4.subheading
-                                .timeline-body
-                   li
-                     p.text-muted=vcDirectionsTrain
-                   li
-                     p.text-muted=vcDirectionsHighway
-
+                  .col-lg-6.col-sm-12.text-center
+                    p.text-muted=vcByTrain
+                    p.text-muted=vcDirectionsTrain
+                    p.text-muted=vcByHighWay
+                    p.text-muted=vcDirectionsHighway
+                  .embed-responsive.embed-responsive-16by9.col-xs-12.text-center
+                    iframe.col-sm-6.col-xs-12(src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP1tt2wTu1BIRfbX4gehPYWs&key=AIzaSyD8Cfp36f9ME5SRQSSOOSa8srit6i6y1mc', width='360', height='360', frameborder='0', style='border:0', allowfullscreen='')        
         // Contact Section
         section#contact
           .container
@@ -264,6 +258,7 @@ html
                       i.fa.fa-times=vcClose
 
 
+    //script(src='https://maps.googleapis.com/maps/api/js')
     script(src='https://code.jquery.com/jquery-2.2.4.min.js')
     script(src='/js/bootstrap.min.js')
     script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')

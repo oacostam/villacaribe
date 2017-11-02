@@ -14,6 +14,8 @@ router.get('/', function (req, res) {
         vcGoTop : req.i18n.__("vcGoTop"),
         vcPictures : req.i18n.__("vcPictures"),
         vcHowToArr : req.i18n.__("vcHowToArr"),
+        vcByTrain : req.i18n.__("vcByTrain"),
+        vcByHighWay : req.i18n.__("vcByHighWay"),
         vcContact : req.i18n.__("vcContact"),
         vcService1 : req.i18n.__("vcService1"),
         vcService1Desc : req.i18n.__("vcService1Desc"),
