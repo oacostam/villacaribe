@@ -206,9 +206,9 @@ html
                         textarea#message.form-control(placeholder='#{vcMessagePh}', required='', data-validation-required-message='#{vcMessageReqMessage}')
                         p.help-block.text-danger
                     .clearfix
-                    .col-lg-6.text-center
-                      #g-recaptcha.g-recaptcha(data-sitekey='6LdvDBEUAAAAAJTG9nknJxScewdMOpbD_e8Q7Bje')
-                    .col-lg-6.text-center
+                    .col-lg-5.text-center
+                      #g-recaptcha.g-recaptcha.btn(data-sitekey='6LdvDBEUAAAAAJTG9nknJxScewdMOpbD_e8Q7Bje')
+                    .col-lg-7.text-center
                       #success
                       button.btn.btn-xl(type='submit')=vcBtnSendMessage
         footer
