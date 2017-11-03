@@ -73,5 +73,7 @@
 	"vcService1Desc": "vcService1Desc",
 	"vcService2Desc": "vcService2Desc",
     "vcService3Desc": "vcService3Desc",
-    "vcService4Desc": "vcService4Desc"
+	"vcService4Desc": "vcService4Desc",
+	"vcMailOk": "Email sent successfully",
+	"vcMailError": "There was an error processing your request"
 }

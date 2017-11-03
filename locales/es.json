@@ -61,5 +61,7 @@
 	"vcNameReqMessage": "Por favor, especifique un nombre",
 	"vcEmailReqMessage": "Por favor, especifique una direccion de email",
 	"vcMessageReqMessage": "Por favor, especifique un mensaje",
-	"vcClose": "Cerrar"
+	"vcClose": "Cerrar",
+	"vcMailOk": "Su correo ha sido enviado correctamente",
+	"vcMailError": "Hubo un error procesando su solicitud."
 }

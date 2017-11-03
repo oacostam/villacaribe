@@ -1,9 +1,9 @@
 {
 	"vcWelcome": "Willkommen zu",
-	"vcNiceMeet": "Villa Caribe B&B website",
+	"vcNiceMeet": "Villa Caribe B&B",
 	"vcTellMeMore": "Erzähl mir mehr",
 	"vcServices": "Diensten",
-	"vcToggleNavigation": "Toggle-Navigation",
+	"vcToggleNavigation": "Navigation umschalten",
 	"vcServicesSub": "Wir bieten folgende Dienstleistungen an",
 	"vcGoTop": "Zur Spitze gehen",
 	"vcPictures": "Bilder",
@@ -61,5 +61,7 @@
 	"vcNameReqMessage": "vcNameReqMessage",
 	"vcEmailReqMessage": "vcEmailReqMessage",
 	"vcMessageReqMessage": "vcMessageReqMessage",
-	"vcClose": "vcClose"
+	"vcClose": "Schließen",
+	"vcMailOk": "Email wurde erfolgreich Versendet",
+	"vcMailError": "Während ihrer Anfrage ist ein Fehler aufgetreten"
 }

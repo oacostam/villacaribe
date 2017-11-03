@@ -61,5 +61,7 @@
 	"vcNameReqMessage": "vcNameReqMessage",
 	"vcEmailReqMessage": "vcEmailReqMessage",
 	"vcMessageReqMessage": "vcMessageReqMessage",
-	"vcClose": "vcClose"
+	"vcClose": "Chiudere",
+	"vcMailOk": "Email inviata correttamente",
+	"vcMailError": "Si è verificato un errore durante l'esecuzione della richiesta"
 }

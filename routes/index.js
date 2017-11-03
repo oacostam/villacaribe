@@ -77,21 +77,21 @@ router.post('/', function(req, res) {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-            console.log(error);
-            var response = {
+            console.log('Error sending email: ' + error);
+            var response500 = {
                 status  : 500,
-                success : 'There was an error processing your request.'
+                success : req.i18n.__("vcMailError")
             }
             
-            return res.send(500,JSON.stringify(response));
+            res.send(500,JSON.stringify(response500));
         }
         console.log('Message sent: ' + info.response);
-        var response = {
+        var response200 = {
             status  : 200,
-            success : 'Email sent successfully'
+            success : req.i18n.__("vcMailOk")
         }
         
-        return res.send(JSON.stringify(response));
+        return res.send(JSON.stringify(response200));
     });
 });
 
