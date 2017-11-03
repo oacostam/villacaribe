@@ -2,6 +2,10 @@
   "name": "villa-caribe-node",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oacostam/villacaribe.git"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },

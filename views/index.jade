@@ -46,6 +46,17 @@ html
             // Collect the nav links, forms, and other content for toggling
             #bs-example-navbar-collapse-1.collapse.navbar-collapse
               ul.nav.navbar-nav.navbar-right
+                li
+                  li
+                  a.img-lang(href='/?lang=it')
+                    img(src='img/flag_italy.png', alt='Italiano')
+                  a.img-lang(href='/?lang=en')
+                    img(src='img/flag_uk.png', alt='English')
+                  a.img-lang(href='/?lang=de')
+                    img(src='img/flag_germany.png', alt='Deutsche')
+                  a.img-lang(href='/?lang=es')
+                    img(src='img/flag_spain.png', alt='Español')
+              ul.nav.navbar-nav.navbar-right
                 li.hidden
                   a(href='#page-top')
                 li
@@ -56,16 +67,8 @@ html
                   a.page-scroll(href='#howtoarrive')=vcHowToArr
                 li
                   a.page-scroll(href='#contact')=vcContact
-
-              div
-                  a.img-lang(href='/?lang=it')
-                    img(src='img/flag_italy.png', alt='Italiano')
-                  a.img-lang(href='/?lang=en')
-                    img(src='img/flag_uk.png', alt='English')
-                  a.img-lang(href='/?lang=de')
-                    img(src='img/flag_germany.png', alt='Deutsche')
-                  a.img-lang(href='/?lang=es')
-                    img(src='img/flag_spain.png', alt='Español')
+                
+                  
             // /.navbar-collapse
           // /.container-fluid
         // Header
@@ -176,7 +179,8 @@ html
                     p.text-muted=vcByHighWay + ' ' + vcDirectionsHighway
                   .embed-responsive.embed-responsive-16by9.col-xs-12.text-center
                     iframe.col-sm-6.col-xs-12(src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP1tt2wTu1BIRfbX4gehPYWs&key=AIzaSyD8Cfp36f9ME5SRQSSOOSa8srit6i6y1mc', width='360', height='360', frameborder='0', style='border:0', allowfullscreen='')        
-        // Contact Section
+        
+        //- Contact Section
         section#contact
           .container
             .row
@@ -202,7 +206,9 @@ html
                         textarea#message.form-control(placeholder='#{vcMessagePh}', required='', data-validation-required-message='#{vcMessageReqMessage}')
                         p.help-block.text-danger
                     .clearfix
-                    .col-lg-12.text-center
+                    .col-lg-6.text-center
+                      #g-recaptcha.g-recaptcha(data-sitekey='6LdvDBEUAAAAAJTG9nknJxScewdMOpbD_e8Q7Bje')
+                    .col-lg-6.text-center
                       #success
                       button.btn.btn-xl(type='submit')=vcBtnSendMessage
         footer
@@ -253,3 +259,4 @@ html
     script(src='/js/jqBootstrapValidation.min.js')
     script(src='/js/contact_me.js')
     script(src='/js/agency.min.js')
+    script(src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=' + lang, async='', defer='')
