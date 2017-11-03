@@ -64,15 +64,22 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
     // create reusable transporter object using the default SMTP transport
-    var emailAccount = process.env.EMAIL_ACCOUNT;
-    var transporter = nodemailer.createTransport('smtps://' + emailAccount + '@smtp.gmail.com');
+   let transporter = nodemailer.createTransport({
+    host: 'smtp.mail.yahoo.com',
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+        user:process.env.EMAIL_ACCOUNT, 
+        pass: process.env.EMAIL_PASS 
+    }
+});
 
     // setup e-mail data with unicode symbols
-    var mailOptions = {
-        from: '"' + req.body.name + '" <' + req.body.email + '>',// sender address
+    let mailOptions = {
+        from: process.env.EMAIL_ACCOUNT,// sender address
         to: 'info@villacaribe.org,oscar.acostamontesde@gmail.com', // list of receivers
         subject: 'Mensaje desde la web de VillaCaribe', // Subject line
-        text: req.body.message // plaintext body
+        text: req.body.name + ' email:' + req.body.email + 'wrote: ' + req.body.message // plaintext body
     };
 
     // send mail with defined transport object
@@ -83,16 +90,15 @@ router.post('/', function (req, res) {
                 status: 500,
                 success: req.i18n.__("vcMailError")
             }
-
             res.send(500, JSON.stringify(response500));
+        }else{
+            console.log('Message sent: ' + info.response);
+            var response200 = {
+                status: 200,
+                success: req.i18n.__("vcMailOk")
+            }
+            res.send(JSON.stringify(response200));
         }
-        console.log('Message sent: ' + info.response);
-        var response200 = {
-            status: 200,
-            success: req.i18n.__("vcMailOk")
-        }
-
-        res.send(JSON.stringify(response200));
     });
 
 });
