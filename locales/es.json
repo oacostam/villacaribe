@@ -13,8 +13,8 @@
 	"vcContact": "Contacto",
 	"vcService1": "Pago con tarjeta",
 	"vcService2": "Internet",
-    "vcService3": "Aparcamiento",
-    "vcService4": "Desayuno",
+	"vcService3": "Aparcamiento",
+	"vcService4": "Desayuno",
 	"vcPicturesHead": "Imágenes",
 	"vcPicturesHeadDesc": "Algunas imagenes de Villa Caribe B&B",
 	"vcPicture1Name": "vcPicture1Name",
@@ -44,8 +44,8 @@
 	"vcPrivacyPolLink": "Política de privacidad",
 	"vcService1Desc": "Aceptamos el pago con tarjetas Visa",
 	"vcService2Desc": "Tenemos servicio WiFi en todas las habitaciones",
-    "vcService3Desc": "Disponemos de aparcamiento privado, consultar disponibilidad.",
-    "vcService4Desc": "Ofrecemos desayuno tipo continental con yogurt, cereales y fruta de temporada.",
+	"vcService3Desc": "Disponemos de aparcamiento privado, consultar disponibilidad.",
+	"vcService4Desc": "Ofrecemos desayuno tipo continental con yogurt, cereales y fruta de temporada.",
 	"vcImg1Alt": "vcImg1Alt",
 	"vcImg1Desc": "vcImg1Desc",
 	"vcImg2Alt": "vcImg2Alt",
@@ -63,5 +63,7 @@
 	"vcMessageReqMessage": "Por favor, especifique un mensaje",
 	"vcClose": "Cerrar",
 	"vcMailOk": "Su correo ha sido enviado correctamente",
-	"vcMailError": "Hubo un error procesando su solicitud."
+	"vcMailError": "Hubo un error procesando su solicitud.",
+	"img2Alt": "img2Alt",
+	"img2Desc": "img2Desc"
 }

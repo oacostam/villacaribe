@@ -257,6 +257,10 @@ html
     script(src='/js/classie.min.js')
     script(src='/js/cbpAnimatedHeader.min.js')
     script(src='/js/jqBootstrapValidation.min.js')
-    script(src='/js/contact_me.js')
-    script(src='/js/agency.min.js')
+    - var env = settings.env;
+    if env == 'development'
+      script(src='/js/contact_me.js')
+      script(src='/js/agency.js')
+    else
+      script(src='/js/js.min.js')
     script(src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=' + lang, async='', defer='')
