@@ -159,7 +159,7 @@ html
                   .portfolio-hover
                     .portfolio-hover-content
                       i.fa.fa-plus.fa-3x
-                  img.img-responsive(src='img/pictures/frente-hotel.jpg', alt='#{vcImg6Alt}')
+                  img.img-responsive(src='img/pictures/frente-hotel.jpg', alt='')
                 .portfolio-caption
 
 
@@ -171,8 +171,10 @@ html
                     h2.section-heading=vcHowToArr
                     h3.section-subheading.text-muted
                       p.large=vcAddress
-                      p=vcTel
-                      p=vcEmail            
+                      p(itemprop='telephone')
+                        a(href='tel:' + vcTel)=vcTel
+                      p(itemprop='email')
+                        a(href='mailto:' + vcEmail)=vcEmail            
                 .row
                   .col-lg-12.col-sm-12
                     p.text-muted=vcByTrain + ' ' + vcDirectionsTrain
