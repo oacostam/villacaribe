@@ -1,4 +1,6 @@
-﻿doctype html
+﻿- var env = settings.env;
+
+doctype html
 html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -209,6 +211,7 @@ html
                         p.help-block.text-danger
                     .clearfix
                     .col-lg-5.text-center
+                    if env == 'production'
                       #g-recaptcha.g-recaptcha.btn(data-sitekey='6LdvDBEUAAAAAJTG9nknJxScewdMOpbD_e8Q7Bje')
                     .col-lg-7.text-center
                       #success
@@ -259,7 +262,6 @@ html
     script(src='/js/classie.min.js')
     script(src='/js/cbpAnimatedHeader.min.js')
     script(src='/js/jqBootstrapValidation.min.js')
-    - var env = settings.env;
     if env == 'development'
       script(src='/js/contact_me.js')
       script(src='/js/agency.js')
