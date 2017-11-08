@@ -211,7 +211,6 @@ html
                         p.help-block.text-danger
                     .clearfix
                     .col-lg-5.text-center
-                    if env == 'production'
                       #g-recaptcha.g-recaptcha.btn(data-sitekey='6LdvDBEUAAAAAJTG9nknJxScewdMOpbD_e8Q7Bje')
                     .col-lg-7.text-center
                       #success
@@ -262,9 +261,10 @@ html
     script(src='/js/classie.min.js')
     script(src='/js/cbpAnimatedHeader.min.js')
     script(src='/js/jqBootstrapValidation.min.js')
-    if env == 'development'
-      script(src='/js/contact_me.js')
-      script(src='/js/agency.js')
-    else
-      script(src='/js/js.min.js')
+  if env == 'development'
+    script(src='/js/contact_me.js')
+    script(src='/js/agency.js')
+  else
+    script(src='/js/js.min.js')
+
     script(src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=' + lang, async='', defer='')
