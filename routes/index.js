@@ -9,6 +9,8 @@ router.get('/', function (req, res) {
         vcNiceMeet: req.i18n.__("vcNiceMeet"),
         vcTellMeMore: req.i18n.__("vcTellMeMore"),
         vcServices: req.i18n.__("vcServices"),
+        vcWhoWeAre: req.i18n.__("vcWhoWeAre"),
+        vcWhoWeAreSub: req.i18n.__("vcWhoWeAreSub"),
         vcToggleNavigation: req.i18n.__("vcToggleNavigation"),
         vcServicesSub: req.i18n.__("vcServicesSub"),
         vcGoTop: req.i18n.__("vcGoTop"),

@@ -62,6 +62,8 @@ html
                 li.hidden
                   a(href='#page-top')
                 li
+                  a.page-scroll(href='#whoweare')=vcWhoWeAre
+                li
                   a.page-scroll(href='#services')=vcServices
                 li
                   a.page-scroll(href='#portfolio')=vcPictures
@@ -79,14 +81,23 @@ html
             .intro-text
               .intro-lead-in=vcWelcome
               .intro-heading=vcNiceMeet
-              a.page-scroll.btn.btn-xl(href='#services')=vcTellMeMore
+              a.page-scroll.btn.btn-xl(href='#whoweare')=vcTellMeMore
+        section#whoweare
+          .container
+            .row
+              .col-lg-12.text-center
+                h2.section-heading=vcWhoWeAre
+                p.text-muted=vcWhoWeAreSub
         // Services Section
         section#services
           .container
             .row
               .col-lg-12.text-center
                 h2.section-heading=vcServices
-                h3.section-subheading.text-muted=vcServicesSub
+                h3.section-subheading.text-muted=vcvcServicesSub
+            .row
+              .col-lg-12.text-center
+                h3.section-heading=vcServices
             .row.text-center
               .col-md-3
                 span.fa-stack.fa-4x
