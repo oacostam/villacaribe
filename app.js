@@ -11,38 +11,41 @@ var picturesRoute = require('./routes/pictures');
 
 var app = express();
 
+// This middleware must come first because cookies are needed for text translations.
+app.use(cookieParser());
+
+//Static content
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Attach the i18n property to the express request object
 // And attach helper methods for use in templates
 I18n.expressBind(app, {
     // setup some locales - other locales default to en silently
     locales: ['it', 'en', 'de', 'es'],
     directory: 'locales', 
-    extension: '.json', 
-    devMode: (app.get('env') === 'development')
+    extension: '.json',
+    devMode: (app.get('env') === 'development'),
+    cookieName : 'lang'
 });
 
 // This is how you'd set a locale from req.cookies.
 // Don't forget to set the cookie either on the client or in your Express app.
 app.use(function (req, res, next) {
-    req.i18n.setLocaleFromQuery(req);
+    req.i18n.setLocaleFromCookie(req);
     res.set('charset', 'utf-8')
     next();
 });
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 
 
@@ -58,7 +61,6 @@ app.use(function (req, res, next) {
 });
 
 // error handlers
-
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {

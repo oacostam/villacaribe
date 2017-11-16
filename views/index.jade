@@ -50,13 +50,13 @@ html
               ul.nav.navbar-nav.navbar-right
                 li
                   li
-                  a.img-lang(href='/?lang=it')
+                  a.img-lang(href='/?lang=it', data-lang='it')
                     img(src='img/flag_italy.png', alt='Italiano')
-                  a.img-lang(href='/?lang=en')
+                  a.img-lang(href='/?lang=en', data-lang='en')
                     img(src='img/flag_uk.png', alt='English')
-                  a.img-lang(href='/?lang=de')
+                  a.img-lang(href='/?lang=de', data-lang='de')
                     img(src='img/flag_germany.png', alt='Deutsche')
-                  a.img-lang(href='/?lang=es')
+                  a.img-lang(href='/?lang=es', data-lang='es')
                     img(src='img/flag_spain.png', alt='Español')
               ul.nav.navbar-nav.navbar-right
                 li.hidden
@@ -94,10 +94,7 @@ html
             .row
               .col-lg-12.text-center
                 h2.section-heading=vcServices
-                h3.section-subheading.text-muted=vcvcServicesSub
-            .row
-              .col-lg-12.text-center
-                h3.section-heading=vcServices
+                h3.section-subheading.text-muted=vcServicesSub
             .row.text-center
               .col-md-3
                 span.fa-stack.fa-4x
@@ -133,7 +130,7 @@ html
                 h3.section-subheading.text-muted=vcPicturesHeadDesc
             .row
               .col-md-4.col-sm-6.portfolio-item
-                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/camera_rosa-preview.jpg', data-i18nkey='vcImg1')
+                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/camera_rosa-preview.jpg',data-i18nkey='vcImg1')
                   .portfolio-hover
                     .portfolio-hover-content
                       i.fa.fa-plus.fa-3x
