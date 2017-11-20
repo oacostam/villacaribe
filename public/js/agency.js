@@ -6,32 +6,32 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 var onloadCallback = function() {
-  grecaptcha.render('g-recaptcha', {
-    'sitekey' : $('.g-recaptcha').data('sitekey')
+  grecaptcha.render("g-recaptcha", {
+    sitekey: $(".g-recaptcha").data("sitekey")
   });
 };
 
 function getCookie(c_name) {
   if (document.cookie.length > 0) {
-      c_start = document.cookie.indexOf(c_name + "=");
-      if (c_start !== -1) {
-          c_start = c_start + c_name.length + 1;
-          c_end = document.cookie.indexOf(";", c_start);
-          if (c_end === -1) {
-              c_end = document.cookie.length;
-          }
-          return unescape(document.cookie.substring(c_start, c_end));
+    c_start = document.cookie.indexOf(c_name + "=");
+    if (c_start !== -1) {
+      c_start = c_start + c_name.length + 1;
+      c_end = document.cookie.indexOf(";", c_start);
+      if (c_end === -1) {
+        c_end = document.cookie.length;
       }
+      return unescape(document.cookie.substring(c_start, c_end));
+    }
   }
   return "";
 }
 
-function setCookie(name,value,days) {
+function setCookie(name, value, days) {
   var expires = "";
   if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days*24*60*60*1000));
-      expires = "; expires=" + date.toUTCString();
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + value + expires + "; path=/";
 }
@@ -49,13 +49,14 @@ $(function() {
       a.preventDefault();
   });
 }),
-$("a.img-lang").bind("click", function(a) {
-  setCookie("lang", $(this).data("lang"), 30)
-}),
+  $("a.img-lang").bind("click", function(a) {
+    setCookie("lang", $(this).data("lang"), 30);
+  }),
   $("a.portfolio-link").bind("click", function(a) {
     var b = this;
     $.ajax({
-      url: "/pictures/" + $(this).data("i18nkey") + '/?lang=' + getCookie('lang'),
+      url:
+        "/pictures/" + $(this).data("i18nkey") + "/?lang=" + getCookie("lang"),
       success: function(a) {
         $("#imgportfoliomodal").attr("alt", a.alt),
           $("#imgtitlemodal").html(a.alt),
@@ -66,14 +67,23 @@ $("a.img-lang").bind("click", function(a) {
           $("#portfolioModal1").toggle(),
           $("body").addClass("modal-open");
       },
+      error: function(xhr, ajaxOptions, thrownError) {
+        console.log('Ajax error: ' + xhr.responseText);
+        alert(thrownError);
+      },
       dataType: "json"
     });
     a.preventDefault();
   }),
   $('*[data-dismiss="modal"]').bind("click", function(a) {
-    $("#portfolioModal1").removeClass("in"),
-      $("#portfolioModal1").toggle(),
-      $("body").removeClass("modal-open");
+    $("#portfolioModal1").removeClass("in");
+    $("#portfolioModal1").toggle();
+    $("body").removeClass("modal-open");
+  }),
+  $("div.modal-backdrop.fade.in").bind("click", function(a) {
+    $("#portfolioModal1").removeClass("in");
+    $("#portfolioModal1").toggle();
+    $("body").removeClass("modal-open");
   }),
   $("body").scrollspy({ target: ".navbar-fixed-top" }),
   $(".navbar-collapse ul li a").click(function() {
