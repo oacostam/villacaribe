@@ -69,7 +69,9 @@ $(function() {
       },
       error: function(xhr, ajaxOptions, thrownError) {
         console.log('Ajax error: ' + xhr.responseText);
-        alert(thrownError);
+        $("#portfolioModal1").removeClass("in");
+        $("#portfolioModal1").toggle();
+        $("body").removeClass("modal-open");
       },
       dataType: "json"
     });
