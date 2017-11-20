@@ -35,8 +35,6 @@ router.get('/', function (req, res) {
         vcImg2Desc: req.i18n.__("vcImg2Desc"),
         vcImg3Alt: req.i18n.__("vcImg3Alt"),
         vcImg3Desc: req.i18n.__("vcImg3Desc"),
-        vcImg4Alt: req.i18n.__("vcImg4Alt"),
-        vcImg4Desc: req.i18n.__("vcImg4Desc"),
         vcImg5Alt: req.i18n.__("vcImg5Alt"),
         vcImg5Desc: req.i18n.__("vcImg5Desc"),
         vcImg6Alt: req.i18n.__("vcImg6Alt"),

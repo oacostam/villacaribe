@@ -48,18 +48,14 @@
 	"vcImg2Desc": "Ich habe diesem Zimmer eine leuchtend violette Farbe verliehen, die den Geist zu Introspektion und tiefem Nachdenken anregt.Ein Türfenster gibt eine Landschaft voller Leben. Mit der Möglichkeit eines dritten Betts für einen jungen Gast. Mit eigenem Bad",
 	"vcImg3Alt": "Martinica",
 	"vcImg3Desc": "Der kleinste der drei, mein Favorit, ist der erste, der von unseren Gästen gewählt wird, ein fröhliches Gelb mit schönen leuchtenden Nuancen, die ideale Farbe, um unseren Geist zum Lesen anzuregen. Es hat einen schönen Balkon mit Blick auf das Meer und die Berge, die auf den Olivenbäumen zu schweben scheint, die Ruhe und ideale Erholung nach einem Tag auf den Cinque Terre Trails geben. Es verfügt über ein eigenes Bad.",
-	"vcImg4Alt": "vcImg4Alt",
-	"vcImg4Desc": "vcImg4Desc",
 	"vcImg5Alt": "Kochen",
 	"vcImg5Desc": "Wir bieten unseren G\u00E4sten ein typisches italienisches Fr\u00FChst\u00FCck in der K\u00FCche unseres Hauses im karibischen Stil, wo die Farbe des Meeres uns schon begleitet, wenn wir aufwachen, in einer famili\u00E4ren und ungezwungenen Atmosph\u00E4re.",
-	"vcImg6Alt": "vcImg6Alt",
-	"vcImg6Desc": "vcImg6Desc",
+	"vcImg6Alt": "Haupteingang",
+	"vcImg6Desc": "Das B & B befindet sich im 1. Stock eines Geb\u00E4udes, das in den 70er Jahren gebaut und im Winter 2017 komplett renoviert wurde. Es besteht aus zwei Apartments, eines f\u00FCr die G\u00E4ste und das andere, nebenan, wo der Eigent\u00FCmer wohnt.",
 	"vcNameReqMessage": "Bitte geben Sie einen Namen ein",
 	"vcEmailReqMessage": "Bitte geben Sie eine E-Mail-Adresse ein",
 	"vcMessageReqMessage": "Bitte geben Sie eine Nachricht ein",
 	"vcClose": "Schließen",
 	"vcMailOk": "Email wurde erfolgreich Versendet",
-	"vcMailError": "Während ihrer Anfrage ist ein Fehler aufgetreten",
-	"vcvcImg1Alt": "vcvcImg1Alt",
-	"vcvcImg1Desc": "vcvcImg1Desc"
+	"vcMailError": "Während ihrer Anfrage ist ein Fehler aufgetreten"
 }
