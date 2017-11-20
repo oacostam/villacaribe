@@ -137,6 +137,23 @@ html
                 h2.section-heading=vcPicturesHead
                 h3.section-subheading.text-muted=vcPicturesHeadDesc
             .row
+
+              .col-md-6.col-sm-6.portfolio-item
+                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/frente-hotel-preview.jpg', data-i18nkey='vcImg6')
+                  .portfolio-hover
+                    .portfolio-hover-content
+                      i.fa.fa-plus.fa-3x
+                  img.img-responsive(src='img/pictures/frente-hotel.jpg', alt='')
+                .portfolio-caption
+              .col-md-6.col-sm-6.portfolio-item
+                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/desayuno-preview.jpg', data-i18nkey='vcImg5')
+                  .portfolio-hover
+                    .portfolio-hover-content
+                      i.fa.fa-plus.fa-3x
+                  img.img-responsive(src='img/pictures/desayuno.jpg', alt='#{vcImg5Alt}')
+                .portfolio-caption
+
+            .row
               .col-md-4.col-sm-6.portfolio-item
                 a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/camera_rosa-preview.jpg',data-i18nkey='vcImg1')
                   .portfolio-hover
@@ -158,28 +175,6 @@ html
                       i.fa.fa-plus.fa-3x
                   img.img-responsive(src='img/pictures/camera_viola.jpg', alt='#{vcImg3Alt}')
                 .portfolio-caption
-              .col-md-4.col-sm-6.portfolio-item
-                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/camera_arancione-preview.jpg', data-i18nkey='vcImg4')
-                  .portfolio-hover
-                    .portfolio-hover-content
-                      i.fa.fa-plus.fa-3x
-                  img.img-responsive(src='img/pictures/camera_arancione.jpg', alt='#{vcImg4Alt}')
-                .portfolio-caption
-              .col-md-4.col-sm-6.portfolio-item
-                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/desayuno-preview.jpg', data-i18nkey='vcImg5')
-                  .portfolio-hover
-                    .portfolio-hover-content
-                      i.fa.fa-plus.fa-3x
-                  img.img-responsive(src='img/pictures/desayuno.jpg', alt='#{vcImg5Alt}')
-                .portfolio-caption
-              .col-md-4.col-sm-6.portfolio-item
-                a.portfolio-link(href='#portfolioModal1', data-toggle='modal', data-imgsrc='img/pictures/frente-hotel-preview.jpg', data-i18nkey='vcImg6')
-                  .portfolio-hover
-                    .portfolio-hover-content
-                      i.fa.fa-plus.fa-3x
-                  img.img-responsive(src='img/pictures/frente-hotel.jpg', alt='')
-                .portfolio-caption
-
 
         //- Section Hot to arrive
         section#howtoarrive.bg-light-gray
