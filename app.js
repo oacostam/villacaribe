@@ -34,6 +34,12 @@ app.use(function (req, res, next) {
     req.i18n.setLocaleFromQuery(req);
     res.set('charset', 'utf-8');
     res.setHeader('Content-Language', req.i18n.getLocale());
+    var cookie = req.cookies.lang;
+    if (cookie === undefined)
+    {
+      res.cookie('lang', req.i18n.getLocale(), { maxAge: 900000, httpOnly: false });
+      console.log('cookie created successfully');
+    } 
     next();
 });
 
