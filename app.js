@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var I18n = require('i18n-2');
 var indexRoute = require('./routes/index');
 var legalRoute = require('./routes/legal');
-var picturesRoute = require('./routes/pictures');
 
 var app = express();
 
@@ -58,7 +57,6 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 
 app.use('/', indexRoute);
 app.use('/legal', legalRoute);
-app.use('/pictures', picturesRoute);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

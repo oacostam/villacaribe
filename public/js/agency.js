@@ -52,31 +52,17 @@ $(function() {
     setCookie('lang', $(this).data('lang'), 30);
   });
   $('a.portfolio-link').bind('click', function(a) {
-    var b = this;
-    $.ajax({
-      url:
-        '/pictures/' + $(this).data('i18nkey') + '/?lang=' + getCookie('lang'),
-      success: function(a) {
-        $('#imgportfoliomodal').attr('alt', a.alt),
-          $('#imgtitlemodal').html(a.alt),
-          $('#imagedescmodal').html(a.desc),
-          $('#imgportfoliomodal').attr('src', $(b).data('imgsrc')),
-          $('#imgportfoliomodal').attr('alt', $(b).data('imgalt')),
-          $('#portfolioModal1').addClass('in'),
-          $('#portfolioModal1').toggle(),
-          $('body').addClass('modal-open');
-      },
-      error: function(xhr, ajaxOptions, thrownError) {
-        console.log('Ajax error: ' + xhr.responseText);
-        $('#portfolioModal1').removeClass('in');
-        $('#portfolioModal1').toggle();
-        $('body').removeClass('modal-open');
-      },
-      dataType: 'json'
-    });
+    $('#imgportfoliomodal').attr('alt', $('#' + $(this).data('i18nkey') + 'Alt').val()),
+    $('#imgtitlemodal').html($($(this).data('i18nkey') + 'Alt').val()),
+    $('#imagedescmodal').html($('#' + $(this).data('i18nkey') + 'Desc').val()),
+    $('#imgportfoliomodal').attr('src', $(this).data('imgsrc')),
+    $('#imgportfoliomodal').attr('alt', $('#' + $(this).data('i18nkey') + 'Alt').val()),
+    $('#portfolioModal1').addClass('in'),
+    $('#portfolioModal1').toggle(),
+    $('body').addClass('modal-open');
     a.preventDefault();
   });
-  $('*[data-dismiss='modal']').bind('click', function(a) {
+  $('*[data-dismiss="modal"]').bind('click', function(a) {
     $('#portfolioModal1').removeClass('in');
     $('#portfolioModal1').toggle();
     $('body').removeClass('modal-open');
