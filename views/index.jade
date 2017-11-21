@@ -3,31 +3,43 @@
 doctype html
 html
   head
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= "Villa Caribe B&B"
     meta(name='charset', content='UTF-8')
-    meta(name='description', content='Villacaribe B&B, Monterosso al Mare, Cinque Terre')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+    title="Villa Caribe B&B"
+    meta(name='description', content='Villa Caribe B&B, Via Padre Semeria 49 19016 Monterosso al Mare')
     meta(name='keywords', content='b&b,Bed and Breakfast,hotel,albergo,Übernachtung mit Frühstück,ベッド＆ブレックファースト,住宿加早餐, кровать и завтрак,monterosso al mare,cinque terre')
     meta(name='author', content='Oscar Acosta oscaracos@yahoo.com')
-    //OpenGraph
+    //- OpenGraph
     meta(name='og:title', content='Villacaribe B&B')
     meta(name='og:site_name', content='Villacaribe B&B')
     meta(property='og:url', content=' http://www.villacaribe.org/')
     meta(name='og:description', content='Villacaribe B&B, Monterosso al Mare, Cinque Terre')
     meta(name='og:image', content='http://villacaribe.org/img/pictures/frente-hotel-preview.jpg')
   
-    // Schema.org markup for Google+
+    //- Schema.org markup for Google+
     meta(itemprop='name', content='Villacaribe B&B')
     meta(itemprop='description', content='Official web site of Villa Caribe B&B, Monterosso al Mare, Cinque Terre')
     meta(itemprop='image', content='http://villacaribe.org/img/pictures/frente-hotel-preview.jpg')
 
+
+    //- Localized versions
     link(rel='alternate', hreflang="it" href='http://villacaribe.org/?lang=it')
     link(rel='alternate', hreflang="en" href='http://villacaribe.org/?lang=en')
     link(rel='alternate', hreflang="de" href='http://villacaribe.org/?lang=de')
     link(rel='alternate', hreflang="es" href='http://villacaribe.org/?lang=es')
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
+
+    //- ------------------ End Metadata Section---------------------------
+
+    //- Preload resources
+    link(rel="preload", href="https://code.jquery.com/jquery-2.2.4.min.js" as="script")
+    
+    //- Css
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/agency.css')
     link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
+
+    //- Fonts
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Kaushan+Script')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic')
@@ -267,7 +279,7 @@ html
 
     //script(src='https://maps.googleapis.com/maps/api/js')
     script(src='https://code.jquery.com/jquery-2.2.4.min.js')
-    script(src='/js/bootstrap.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
     script(src='/js/classie.min.js')
     script(src='/js/cbpAnimatedHeader.min.js')

@@ -28,11 +28,12 @@ I18n.expressBind(app, {
     cookieName : 'lang'
 });
 
-// This is how you'd set a locale from req.cookies.
-// Don't forget to set the cookie either on the client or in your Express app.
+// Set locale from query string, as the url with lang parameter is used in
+// page header hreflang attribute. Language is also set to cookie when clicked in the corresponding flag
 app.use(function (req, res, next) {
     req.i18n.setLocaleFromQuery(req);
-    res.set('charset', 'utf-8')
+    res.set('charset', 'utf-8');
+    res.setHeader('Content-Language', req.i18n.getLocale());
     next();
 });
 
