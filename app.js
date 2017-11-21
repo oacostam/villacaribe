@@ -31,7 +31,7 @@ I18n.expressBind(app, {
 // This is how you'd set a locale from req.cookies.
 // Don't forget to set the cookie either on the client or in your Express app.
 app.use(function (req, res, next) {
-    req.i18n.setLocaleFromCookie(req);
+    req.i18n.setLocaleFromQuery(req);
     res.set('charset', 'utf-8')
     next();
 });
