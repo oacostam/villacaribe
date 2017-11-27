@@ -5,11 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var I18n = require('i18n-2');
+var helmet = require('helmet');
 var indexRoute = require('./routes/index');
 var legalRoute = require('./routes/legal');
 
 var app = express();
-
+app.use(helmet());
 // This middleware must come first because cookies are needed for text translations.
 app.use(cookieParser());
 
