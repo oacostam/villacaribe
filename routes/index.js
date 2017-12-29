@@ -79,7 +79,7 @@ router.post('/', function (req, res) {
         from: process.env.EMAIL_ACCOUNT,// sender address
         to: 'info@villacaribe.org', // list of receivers
         subject: 'Mensaje desde la web de VillaCaribe', // Subject line
-        text: req.body.name + 'con dirección de email : ' + req.body.email + 'escribío: ' + '\r\n' + req.body.message // plaintext body
+        text: req.body.name + ' con dirección de email : ' + req.body.email + 'escribío: ' + '\r\n' + req.body.message // plaintext body
     };
 
     // send mail with defined transport object
