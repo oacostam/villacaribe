@@ -7,8 +7,17 @@ html(lang='' + lang)
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     
     title="Villa Caribe B&B"
+    if lang == 'it'
+          meta(name='keywords', content='b&b,Bed and Breakfast,hotel,albergo,monterosso al mare,cinque terre')
+    else if lang == 'es'
+          meta(name='keywords', content='b&b,Bed and Breakfast,hotel,monterosso al mare,cinque terre')
+    else if lang == 'en'
+          meta(name='keywords', content='b&b, Bed and Breakfast,hotel,monterosso al mare,cinque terre')
+    if lang == 'de'
+          meta(name='keywords', content='b&b,Bed and Breakfast,hotel,albergo,monterosso al mare,cinque terre')
+    
     meta(name='description', content='Villa Caribe B&B, Via Padre Semeria 49 19016 Monterosso al Mare')
-    meta(name='keywords', content='b&b,Bed and Breakfast,hotel,albergo,Übernachtung mit Frühstück,ベッド＆ブレックファースト,住宿加早餐, кровать и завтрак,monterosso al mare,cinque terre')
+    
     meta(name='author', content='Oscar Acosta oscaracos@yahoo.com')
     //- OpenGraph
     meta(name='og:title', content='Villacaribe B&B')

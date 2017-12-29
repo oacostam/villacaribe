@@ -7,7 +7,8 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 var onloadCallback = function() {
   grecaptcha.render('g-recaptcha', {
-    sitekey: $('.g-recaptcha').data('sitekey')
+    sitekey: $('.g-recaptcha').data('sitekey'),
+    callback : ""
   });
 };
 

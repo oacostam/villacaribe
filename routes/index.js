@@ -65,7 +65,7 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
     // create reusable transporter object using the default SMTP transport
    let transporter = nodemailer.createTransport({
-    host: 'smtp.mail.yahoo.com',
+    host: process.env.OUTBOUND_MAIL_SERVER,
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
@@ -77,9 +77,9 @@ router.post('/', function (req, res) {
     // setup e-mail data with unicode symbols
     let mailOptions = {
         from: process.env.EMAIL_ACCOUNT,// sender address
-        to: 'info@villacaribe.org,oscar.acostamontesde@gmail.com', // list of receivers
+        to: 'info@villacaribe.org', // list of receivers
         subject: 'Mensaje desde la web de VillaCaribe', // Subject line
-        text: req.body.name + ' email:' + req.body.email + 'wrote: ' + req.body.message // plaintext body
+        text: req.body.name + 'con dirección de email : ' + req.body.email + 'escribío: ' + '\r\n' + req.body.message // plaintext body
     };
 
     // send mail with defined transport object
