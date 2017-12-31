@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://villacaribe.org/</loc>
+  </url>
+  <url>
+    <loc>http://villacaribe.org/legal</loc>
+  </url>
+  <url>
+    <loc>http://villacaribe.org/?lang=de</loc>
+  </url>
+  <url>
+    <loc>http://villacaribe.org/?lang=es</loc>
+  </url>
+  <url>
+    <loc>http://villacaribe.org/?lang=it</loc>
+  </url>
+  <url>
+    <loc>http://villacaribe.org/?lang=en</loc>
+  </url>
+</urlset>
+<!--<guid value="6790d59e-f3ca-469b-8112-d68f407c66ea" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
