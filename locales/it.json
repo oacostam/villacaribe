@@ -57,5 +57,6 @@
 	"vcMessageReqMessage": "Si prega di inserire un messaggio",
 	"vcClose": "Chiudere",
 	"vcMailOk": "Email inviata correttamente",
-	"vcMailError": "Si è verificato un errore durante l'esecuzione della richiesta"
+	"vcMailError": "Si è verificato un errore durante l'esecuzione della richiesta",
+	"vcStateContrib": "Contributo Statale"
 }

@@ -57,5 +57,7 @@
     "vcService3Desc": "We have private parking, check availability beforehand.",
 	"vcService4Desc": "We offer continental breakfast with yogurt, cereals and seasonal fruit.",
 	"vcMailOk": "Email sent successfully.",
-	"vcMailError": "There was an error processing your request."
+	"vcMailError": "There was an error processing your request.",
+	"vcStateContrib": "State Contributions"
+
 }

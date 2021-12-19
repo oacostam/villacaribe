@@ -57,5 +57,6 @@
 	"vcMessageReqMessage": "Bitte geben Sie eine Nachricht ein",
 	"vcClose": "Schließen",
 	"vcMailOk": "Email wurde erfolgreich Versendet.",
-	"vcMailError": "Während ihrer Anfrage ist ein Fehler aufgetreten"
+	"vcMailError": "Während ihrer Anfrage ist ein Fehler aufgetreten",
+	"vcStateContrib": "Staatliche Beiträge"
 }
