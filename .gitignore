@@ -4,3 +4,5 @@ node_modules
 # VS Files
 .vscode
 bin/locales
+
+.vs
