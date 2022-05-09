@@ -6,28 +6,28 @@ html(lang='' + lang)
     meta(name='charset', content='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     
-    title="Villa Caribe B&B"
+    title="Villa Caribe Hostel"
     if lang == 'it'
-          meta(name='keywords', content='villacaribe, villa caribe,b&b,Bed and Breakfast,hotel,albergo,monterosso al mare,cinque terre,Italia')
+          meta(name='keywords', content='affittacamere,villacaribe, villa caribe,hotel,albergo,monterosso al mare,cinque terre,Italia')
     else if lang == 'es'
-          meta(name='keywords', content='villacaribe, villa caribe,b&b,Bed and Breakfast,hotel,monterosso al mare,cinque terre,Italia')
+          meta(name='keywords', content='hostal,habitaciones,villacaribe, villa caribe,hotel,monterosso al mare,cinque terre,Italia')
     else if lang == 'en'
-          meta(name='keywords', content='villacaribe, villa caribe,b&b, Bed and Breakfast,hotel,monterosso al mare,cinque terre,Italy')
+          meta(name='keywords', content='hostel,villacaribe, villa caribe, Bed and Breakfast,hotel,monterosso al mare,cinque terre,Italy')
     if lang == 'de'
-          meta(name='keywords', content='villacaribe, villa caribe,b&b,Bed and Breakfast,hotel,albergo,monterosso al mare,cinque terre,Italien')
+          meta(name='keywords', content='herberge,villacaribe, villa caribe,hotel,monterosso al mare,cinque terre,Italien')
     
-    meta(name='description', content='Villa Caribe B&B, Via Padre Semeria 49 19016 Monterosso al Mare')
+    meta(name='description', content='Villa Caribe, Via Padre Semeria 49 19016 Monterosso al Mare')
     meta(name='author', content='Oscar Acosta oscaracos@yahoo.com')
     //- OpenGraph
-    meta(name='og:title', content='Villacaribe B&B')
-    meta(name='og:site_name', content='Villacaribe B&B')
+    meta(name='og:title', content='Villacaribe Hostel')
+    meta(name='og:site_name', content='Villacaribe Hostel')
     meta(property='og:url', content=' https://www.villacaribe.org/')
-    meta(name='og:description', content='Villacaribe B&B, Monterosso al Mare, Cinque Terre')
+    meta(name='og:description', content='Villacaribe Hostel, Monterosso al Mare, Cinque Terre')
     meta(name='og:image', content='https://villacaribe.org/img/pictures/frente-hotel-preview.jpg')
   
     //- Schema.org markup for Google+
-    meta(itemprop='name', content='Villacaribe B&B')
-    meta(itemprop='description', content='Villa Caribe B&B, Monterosso al Mare, Cinque Terre')
+    meta(itemprop='name', content='Villacaribe Affittacamere')
+    meta(itemprop='description', content='Villa Caribe Affittacamere, Monterosso al Mare, Cinque Terre')
     meta(itemprop='image', content='https://villacaribe.org/img/pictures/frente-hotel-preview.jpg')
 
 
@@ -124,30 +124,24 @@ html(lang='' + lang)
                 h2.section-heading=vcServices
                 h3.section-subheading.text-muted=vcServicesSub
             .row.text-center
-              .col-md-3
+              .col-md-4
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
                   i.fa.fa-credit-card.fa-stack-1x.fa-inverse
                 h4.service-heading=vcService1
                 p.text-muted=vcService1Desc
-              .col-md-3
+              .col-md-4
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
                   i.fa.fa-laptop.fa-stack-1x.fa-inverse
                 h4.service-heading=vcService2
                 p.text-muted=vcService2Desc
-              .col-md-3
+              .col-md-4
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
                   i.fa.fa-automobile.fa-stack-1x.fa-inverse
                 h4.service-heading=vcService3
                 p.text-muted=vcService3Desc
-              .col-md-3
-                span.fa-stack.fa-4x
-                  i.fa.fa-circle.fa-stack-2x.text-primary
-                  i.fa.fa-coffee.fa-stack-1x.fa-inverse
-                h4.service-heading=vcService4
-                p.text-muted=vcService4Desc
 
         // Portfolio Grid Section
         section#portfolio.bg-light-gray

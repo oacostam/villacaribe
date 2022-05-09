@@ -1,10 +1,10 @@
 {
 	"vcWelcome": "Welcome to",
-	"vcNiceMeet": "Villa Caribe B&B website",
+	"vcNiceMeet": "Villa Caribe hostel website",
 	"vcTellMeMore": "Tell me more",
 	"vcServices": "Services",
 	"vcWhoWeAre": "About us",
-	"vcWhoWeAreSub": "Villa Caribe is a B & B in the Cinque Terre National Park, Monterosso al Mare, the most spacious and evocative of the characteristic villages of the legendary area.\r\nOur rooms, surrounded by centuries-old olive trees, offer our guests the freshness and the pure nature that invite a relaxing and exciting walk.\r\nWe offer our guests a typical Italian breakfast in the kitchen of our Caribbean home where the color of the sea accompanies us when we wake up in a familiar and informal atmosphere.\r\nThe B & B has 3 double bedrooms with mountain and sea views, well lit and fresh, with air conditioning, hairdryer and hot water.",
+	"vcWhoWeAreSub": "Villa Caribe is a hostel located in the Cinque Terre National Park, Monterosso al Mare, the most spacious and evocative of the characteristic villages of the legendary area.\r\nOur rooms, surrounded by centuries-old olive trees, offer our guests the freshness and the pure nature that invite a relaxing and exciting walk.\r\nWe offer our guests a typical Italian breakfast in the kitchen of our Caribbean home where the color of the sea accompanies us when we wake up in a familiar and informal atmosphere.\r\nThe B & B has 3 double bedrooms with mountain and sea views, well lit and fresh, with air conditioning, hairdryer and hot water.",
 	"vcToggleNavigation": "Toggle navigation",
 	"vcServicesSub": "We offer the following services",
 	"vcGoTop": "Go to top",
@@ -16,7 +16,6 @@
 	"vcService1": "Credit Card Payment",
 	"vcService2": "Internet",
     "vcService3": "Parking",
-    "vcService4": "Breakfast",
 	"vcPicturesHead": "Pictures",
 	"vcPicturesHeadDesc": "We have given our rooms the name of some islands of the Caribbean, the passion of the owner for having been born in the key of the Antilles, Cuba.",
 	"vcPicture4Name": "vcPicture4Name",
@@ -55,7 +54,6 @@
 	"vcService1Desc": "We accept payment with Visa and Mastercard.",
 	"vcService2Desc": "We have WiFi service in all rooms.",
     "vcService3Desc": "We have private parking, check availability beforehand.",
-	"vcService4Desc": "We offer continental breakfast with yogurt, cereals and seasonal fruit.",
 	"vcMailOk": "Email sent successfully.",
 	"vcMailError": "There was an error processing your request.",
 	"vcStateContrib": "State Contributions"
