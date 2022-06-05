@@ -290,9 +290,9 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 40px;
   margin-bottom: 25px;
 }
 
@@ -313,9 +313,9 @@ header .intro-text .intro-heading {
   header .intro-text .intro-heading {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
-    line-height: 75px;
+    line-height: 65px;
     margin-bottom: 50px;
   }
 }
