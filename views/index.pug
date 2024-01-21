@@ -207,7 +207,7 @@ html(lang='' + lang)
                     p.text-muted=vcByTrain + ' ' + vcDirectionsTrain
                     p.text-muted=vcByHighWay + ' ' + vcDirectionsHighway
                   .embed-responsive.embed-responsive-16by9.col-xs-12.text-center
-                    iframe.col-sm-6.col-xs-12(src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP1tt2wTu1BIRfbX4gehPYWs&key=AIzaSyD8Cfp36f9ME5SRQSSOOSa8srit6i6y1mc&language=' + lang, width='360', height='360', frameborder='0', style='border:0', allowfullscreen='')        
+                    iframe.col-sm-6.col-xs-12(src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP1tt2wTu1BIRfbX4gehPYWs&key=' + gmapKey + '&language=' + lang, width='360', height='360', frameborder='0', style='border:0', allowfullscreen='')        
         
         //- Contact Section
         section#contact
@@ -222,17 +222,17 @@ html(lang='' + lang)
                   .row
                     .col-md-6
                       .form-group
-                        input#name.form-control(type='text', placeholder='#{vcNamePh}', required='', data-validation-required-message='#{vcNameReqMessage}')
+                        input#name.form-control(type='text', placeholder=vcNamePh, required='', data-validation-required-message=vcNameReqMessage)
                         p.help-block.text-danger
                       .form-group
-                        input#email.form-control(type='email', placeholder='#{vcEmailPh}', required='', data-validation-required-message='#{vcEmailReqMessage}')
+                        input#email.form-control(type='email', placeholder=vcEmailPh, required='', data-validation-required-message=vcEmailReqMessage)
                         p.help-block.text-danger
                       .form-group
-                        input#phone.form-control(type='tel', placeholder='#{vcPhonePh}')
+                        input#phone.form-control(type='tel', placeholder=vcPhonePh)
                         p.help-block.text-danger
                     .col-md-6
                       .form-group
-                        textarea#message.form-control(placeholder='#{vcMessagePh}', required='', data-validation-required-message='#{vcMessageReqMessage}')
+                        textarea#message.form-control(placeholder=vcMessagePh, required='', data-validation-required-message=vcMessageReqMessage)
                         p.help-block.text-danger
                     .clearfix
                     .col-lg-5.text-center
