@@ -55,7 +55,8 @@ router.get('/', function (req, res) {
         vcPrivacyPolLink: req.i18n.__("vcPrivacyPolLink"),
         vcClose: req.i18n.__("vcClose"),
         vcStateContrib : req.i18n.__("vcStateContrib"),
-        lang: req.i18n.locale
+        lang: req.i18n.locale,
+        gmapKey: process.env.GMAP_KEY
     });
 });
 
