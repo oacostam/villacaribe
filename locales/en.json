@@ -15,7 +15,7 @@
 	"vcContact": "Contact",
 	"vcService1": "Credit Card Payment",
 	"vcService2": "Internet",
-    "vcService3": "Parking",
+  "vcService3": "Parking",
 	"vcPicturesHead": "Pictures",
 	"vcPicturesHeadDesc": "We have given our rooms the name of some islands of the Caribbean, the passion of the owner for having been born in the key of the Antilles, Cuba.",
 	"vcPicture4Name": "vcPicture4Name",
@@ -53,7 +53,7 @@
 	"vcClose": "Close",
 	"vcService1Desc": "We accept payment with Visa and Mastercard.",
 	"vcService2Desc": "We have WiFi service in all rooms.",
-    "vcService3Desc": "We have private parking, check availability beforehand.",
+  "vcService3Desc": "We have private parking, check availability beforehand.",
 	"vcMailOk": "Email sent successfully.",
 	"vcMailError": "There was an error processing your request.",
 	"vcStateContrib": "State Contributions"
